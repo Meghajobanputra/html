@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create profile</title>
+</head>
+<body>
+    <h1>Create Profile</h1>
+    
+    <form action="" method="post">
+       <table width="100%"cellpadding="20">
+        <tr>
+            <td>
+           <font size="5%" width="100%" >
+            <label for="email">Enter Your Email</label>
+            <br> <input type="email" name="email" id="email" required placeholder="Enter your email" >
+           </font>
+            </td>
+            <td>
+             <font size="5%">
+                <label for="password">Set Password</label>
+                <br><input type="password" name="password" id="password" required placeholder="Enter your password" >
+             </font>
+            </td >
+            <td>
+             <font size="5%">
+                <label for="contact">Mobile Number</label>
+                <br><input type="number" name="contact" id="contact" required placeholder="Enter mobile number" >
+             </font>
+            </td>
+        </tr>
+        <br><br>
+        <tr>
+            <td >
+                <font size="5%">
+                    <label  for="slogan_name">Enter slogan here</label>
+                <br><input type="name" name="slogan_name" id="siogan_name" cols="30" rows="2" required placeholder="Enter Company Name/Service Name" >
+                 </font>
+            </td>
+            <td>
+                <font size="5%">
+                    <label for="dob">Enter Birth Of Date</label>
+                    <br><input type="date" name="dob" id="dob" required  >
+                 </font>
+            </td>
+            <td>
+                <font size="5%">
+                    <label for="category">Select Your Category</label>
+                    <br><select name="city" id="">
+                        <option value="1">General</option>
+                        <option value="2">OBC</option>
+                        <option value="3">SS/ST</option>
+                   </select>
+                 </font> 
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <font size="5%">
+                        <label for="first_name">Enter Your Name</label>
+                        <br><input type="name" name="first_name" id="first_name" required placeholder="Enter Your name" >
+                     </font>
+                </td>
+                <td>
+                    <font size="5%">
+                        <label for="second_name">Enter Your Surname</label>
+                        <br><input type="name" name="second_name" id="second_name" required placeholder="Enter Your Surname" >
+                     </font>
+                </td>
+                <td>
+                    <font size="5%">
+                        <label for="third_name">Enter Your Father name</label>
+                        <br><input type="name" name="third_name" id="third_name" required placeholder="Enter Your Father Name" >
+                     </font>
+                </td>
+            </tr>
+            <tr colspan ="2" >
+                <td >
+                    <font size="5%">
+                         <label for="address">Enter Your Address 1 </label>
+                        <br><textarea name="address" id="" cols="60" rows="2"></textarea>
+                     </font> 
+                </td>
+                <td >
+                    <font size="5%">
+                        <label for="address2">Enter Your Address 2 </label>
+                        <br><textarea name="address" id="" cols="60" rows="2"></textarea>
+                     </font> 
+                </td>
+            </tr>
+          <tr align="right">
+            <td>
+                <input type="submit" value="Creat Profile">
+            <input type="reset" value="Clear all">
+            <input type="back" value="back">
+            </td>
+          </tr>
+       </table>
+    </form>
+</body>
+</html>
