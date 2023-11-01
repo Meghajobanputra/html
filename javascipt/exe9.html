@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 9)Write a programe to print inverted half pyramid -->
+<!-- ->https://i1.faceprep.in/fp/articles/img/46684_1580817324.png -->
+<script>
+    var count = 0;
+     var flash = 0;
+     var temp = 6;
+
+     while(flash < 6)
+     {
+          while (count < temp)
+          {
+            document.write("*");
+               count = count + 1;
+               // count--;
+          }
+          document.write("\n");
+          temp = temp - 1 ;
+          count = 0;
+          flash= flash+ 1;
+     }
+</script>
+</body>
+</html>
