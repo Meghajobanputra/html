@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          var numbers = [192, 3216335, 37373, 2321312, 13213, 1212, 1213, 12, 231, 2312, 2321];
+          var evenNumbers = [];
+          var oddNumbers = [];
+          var even_count =0;
+          var odd_count =0;
+          numbers.forEach((value) => {
+            if (value % 2 == 0) {
+                even_count += 1;
+                evenNumbers.push(value);
+            } else {
+                odd_count +=1;
+                oddNumbers.push(value);
+            }
+          });
+          console.log("Total even number is " + even_count);
+          console.log("Total odd  number is " + odd_count);
+          console.log(evenNumbers);
+          console.log(oddNumbers);
+     </script>
+</body>
+</html>
