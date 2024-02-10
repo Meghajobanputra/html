@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Routing Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .menu a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .menu a:hover {
+        background-color: #f0f0f0;
+    }
+    .content {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+    </div>
+    <div class="content" id="home">
+        <h2>Welcome to the Home Page!</h2>
+        <p>This is the home page content.</p>
+    </div>
+    <div class="content" id="about" style="display:none;">
+        <h2>About Us</h2>
+        <p>We are a fantastic company doing amazing things!</p>
+    </div>
+    <div class="content" id="contact" style="display:none;">
+        <h2>Contact Us</h2>
+        <p>Feel free to get in touch with us.</p>
+    </div>
+</div>
+
+<script>
+    function showPage(pageId) {
+        var pages = document.querySelectorAll('.content');
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].style.display = 'none';
+        }
+        document.getElementById(pageId).style.display = 'block';
+    }
+</script>
+</body>
+</html>
