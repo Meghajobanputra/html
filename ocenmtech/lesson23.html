@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop All Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Fruits List</h1>
+        <ul id="fruitsList" class="list-group mt-3">
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+            var fruitsList = document.getElementById("fruitsList");
+            fruits.forEach(function(fruit) {
+                var li = document.createElement("li");
+                li.textContent = fruit;
+                li.classList.add("list-group-item");
+                fruitsList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

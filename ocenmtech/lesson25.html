@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If Else Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>If Else Example</h1>
+    <button id="changeColorBtn" class="btn btn-primary">Change Color</button>
+  </div>
+
+  <script>
+    document.getElementById("changeColorBtn").addEventListener("click", function() {
+  // Generate a random number between 0 and 1
+  const randomNumber = Math.random();
+
+  // Check the condition
+  if (randomNumber < 0.5) {
+    // If the random number is less than 0.5, change background color to green
+    document.body.style.backgroundColor = "green";
+  } else {
+    // Otherwise, change background color to blue
+    document.body.style.backgroundColor = "blue";
+  }
+});
+
+  </script>
+</body>
+</html>
